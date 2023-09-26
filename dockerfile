@@ -4,17 +4,17 @@ ENV PYTHONDONTWRITEBYTECODE 1
 
 ENV PYTHONUNBUFFERED 1
 
-# RUN mkdir /code
+# RUN mkdir /django_web_app
 
-WORKDIR /Core
+WORKDIR /django_web_app
 
 RUN pip install --upgrade pip
 
-COPY requirements.txt /Core/
+COPY requirements.txt /django_web_app/
 
 RUN pip install -r requirements.txt
 
-COPY . /Core/
+COPY . /django_web_app/
 
 EXPOSE 8000
 
