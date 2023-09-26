@@ -2,9 +2,9 @@ name: Deploy to AWS Apprunner Service
 
 on:
   push:
-    branches: ["cicd"]
+    branches: ["master"]
   pull_request:
-    branches: ["cicd"]
+    branches: ["master"]
 
 env:
   AWS_REGION: us-east-1 # set this to your preferred AWS region, e.g. us-west-1
