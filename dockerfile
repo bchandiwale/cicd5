@@ -10,7 +10,7 @@ WORKDIR /django_web_app
 
 RUN pip install --upgrade pip
 
-COPY requirements.txt /django_web_app/
+COPY requirements.txt 
 
 RUN pip install -r requirements.txt
 
